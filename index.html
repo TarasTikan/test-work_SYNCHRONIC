@@ -4,77 +4,60 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>HTML Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      body {
-        width: 100% !important;
+    <style type="text/css">
+      body,
+      table,
+      td,
+      a {
         -webkit-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
-        margin: 0;
-        padding: 0;
-        line-height: 100%;
-      }
-
-      [style*="Open Sans"] {
-        font-family: "Open Sans", arial, sans-serif !important;
-      }
-
-      img {
-        outline: none;
-        text-decoration: none;
-        border: none;
-        -ms-interpolation-mode: bicubic;
-        max-width: 100% !important;
-        margin: 0;
-        padding: 0;
-        display: block;
-      }
-
-      table td {
-        border-collapse: collapse;
-      }
-      p,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        margin: 0;
       }
       table {
-        border-collapse: collapse;
-        mso-table-lspace: 0pt;
-        mso-table-rspace: 0pt;
+        border-collapse: collapse !important;
+      }
+      img {
+        height: auto;
+        line-height: 100%;
+        text-decoration: none;
+        border: 0;
+        outline: none;
+        -ms-interpolation-mode: bicubic;
+      }
+      @media screen and (max-width: 600px) {
+        .main-table {
+          width: 100% !important;
+        }
+        .main-table td {
+          padding-left: 15px !important;
+          padding-right: 15px !important;
+        }
       }
     </style>
   </head>
-
-  <body style="margin: 0; padding: 0">
-    <div
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #EFEFEF"
+  >
+   <center style="width: 100%;table-layout:fixed;background-color: #EFEFEF;padding-top: 45px;padding-bottom: 40px;">
+    <table
+      align="center"
+      border="0"
+      cellspacing="0"
+      cellpadding="0"
+      role="presentation"
       style="
-        font-size: 0px;
-        font-color: #ffffff;
-        opacity: 0;
-        visibility: hidden;
-        width: 0;
-        height: 0;
-        display: none;
+        font-family: 'Arial', sans-serif, Helvetica;
+        background-color: #EFEFEF;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: 600px;
       "
     >
-      Тестовое письмо
-    </div>
-    <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#F5F5F5">
       <tr>
         <td>
-          <table
-            cellpadding="0"
-            cellspacing="0"
-            width="600"
-            align="center"
-            class="main table-600"
-          >
+          <table cellpadding="0" cellspacing="0" width="600" align="center" style="width: 100%; max-width: 600px;">
             <tr>
-              <td width="600" height="30"></td>
+              <td width="600" height="30" style="width: 100%; max-width: 600px;"></td>
             </tr>
             <tr>
               <td
@@ -117,6 +100,7 @@
                   cellspacing="0"
                   width="520"
                   align="center"
+                  style="width: 100%; max-width: 520px;"
                 >
                   <tr>
                     <td align="center">
@@ -205,7 +189,7 @@
                             "
                             align="padding-right"
                           >
-                            <img alt="notebook" src="/tablet.png" />
+                            <img alt="notebook" src="/tablet.png"  width="210" style="width: 100%; max-width: 210px;"/>
                           </td>
                         </tr>
                       </table>
@@ -224,6 +208,7 @@
                   cellspacing="0"
                   width="520"
                   align="center"
+                  style="width: 520px; max-width: 520px;"
                 >
                   <tr>
                     <td align="center">
@@ -234,6 +219,7 @@
                         width="520"
                         bgcolor="#00C6FB"
                         style="
+                          border-collapse: collapse;
                           border-radius: 17px;
                           box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.04),
                             0px 4px 8px 0px rgba(0, 0, 0, 0.04),
@@ -312,7 +298,7 @@
                             "
                             align="padding-right"
                           >
-                            <img alt="notebook" src="/notebooc.png" />
+                            <img alt="notebook" src="/notebooc.png" width="210" style="width: 100%; max-width: 210px;" />
                           </td>
                         </tr>
                       </table>
@@ -331,6 +317,7 @@
                   cellspacing="0"
                   width="520"
                   align="center"
+                  style="border-collapse: collapse"
                 >
                   <tr>
                     <td align="center">
@@ -432,16 +419,88 @@
             <tr>
               <td
                 bgcolor="#FFFFFF"
-                style="padding-top: 20px; padding-bottom: 20px"
+                style="
+                  padding-top: 20px;
+                  padding-bottom: 20px;
+                  padding-left: 40px;
+                  padding-right: 40px;
+                "
               >
                 <table
                   cellpadding="0"
                   cellspacing="0"
-                  width="353"
+                  width="520"
                   align="center"
                 >
+                  <!-- foter main table -->
                   <tr>
-                    <td align="center" class="logo">
+                    <td align="center">
+                      <table
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="320"
+                        align="center"
+                      >
+                        <tr>
+                          <td align="center" colspan="2">
+                            <p
+                              style="
+                                color: rgb(82, 87, 92);
+                                font-family: Arial;
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 16px;
+                                margin: 0;
+                              "
+                            >
+                              If you have questions, please contact us:
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            align="center"
+                            style="padding-top: 15px; padding-bottom: 16px"
+                          >
+                            <a
+                              href="#"
+                              style="
+                                color: rgb(82, 87, 92);
+                                font-family: Arial;
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 20px;
+                                text-decoration: none;
+                              "
+                              >support@support.email</a
+                            >
+                          </td>
+                          <td
+                            align="center"
+                            style="padding-top: 15px; padding-bottom: 16px"
+                          >
+                            <a
+                              href="#"
+                              style="
+                                color: rgb(82, 87, 92);
+                                font-family: Arial;
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 20px;
+                                text-decoration: none;
+                              "
+                              >1234566789</a
+                            >
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="520" height="1" bgcolor="#0C0F51"></td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="padding-top: 16px">
                       <p
                         style="
                           color: rgb(82, 87, 92);
@@ -449,14 +508,16 @@
                           font-size: 14px;
                           font-weight: 400;
                           line-height: 16px;
+                          margin: 0;
                         "
                       >
-                        If you have questions, please contact us:
+                        Some games and bonuses may not be available in your
+                        country.
                       </p>
                     </td>
                   </tr>
                   <tr>
-                    <td align="center">
+                    <td align="center" style="padding-top: 16px">
                       <p
                         style="
                           color: rgb(82, 87, 92);
@@ -464,32 +525,38 @@
                           font-size: 14px;
                           font-weight: 400;
                           line-height: 16px;
+                          margin: 0;
                         "
                       >
-                    support@support.email
+                        You take all the credit for the fact that you have
+                        registered on our site. <br />
+                        For a return link with us, please send a copy to the
+                        whole sheet. <br />
+                        You can
+                        <span
+                          style="
+                            color: rgb(18, 69, 255);
+                            font-family: Arial;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 16px;
+                            text-decoration: underline;
+                          "
+                          >subscribe</span
+                        >
                       </p>
                     </td>
-                          <td align="center">
-                      <p
-                        style="
-                          color: rgb(82, 87, 92);
-                          font-family: Arial;
-                          font-size: 14px;
-                          font-weight: 400;
-                          line-height: 16px;
-                        "
-                      >
-                    support@support.email
-                      </p>
-                    </td>
-                    
                   </tr>
                 </table>
               </td>
+            </tr>
+            <tr>
+              <td width="600" height="30"></td>
             </tr>
           </table>
         </td>
       </tr>
     </table>
+    </center>
   </body>
 </html>
